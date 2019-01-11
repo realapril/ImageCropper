@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FreeLineView">
+
+        <attr name="czcolor" format="string" />
+        <attr name="czstrokeWidth" format="integer" />
+        <attr name="czantiAlias" format="boolean" />
+        <attr name="czbackground" format="string" />
+
+    </declare-styleable>
+</resources>
