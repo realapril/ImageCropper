@@ -107,7 +107,7 @@ public class SquareView extends View {
                 float distance = (float) Math.sqrt(
                         Math.pow(dotsInfo.get(1).x-dotsInfo.get(0).x, 2) +
                                 Math.pow(dotsInfo.get(1).y-dotsInfo.get(0).y, 2) );
-
+                //자동으로 사각형을 그림
                 canvas.drawRect(w/3, h/3, (w/3 + distance*3), (h/3 + distance*3), mPaint);
                 break;
             case 3:
