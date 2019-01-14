@@ -15,7 +15,7 @@ import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn_imgView, btn_view;
+    Button btn_imgView, btn_view, btn_gesture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn_imgView =findViewById(R.id.btn_imageView);
         btn_view =findViewById(R.id.btn_view);
+        btn_gesture = findViewById(R.id.btn_gesture);
 
         //이미지뷰와 일반 뷰에서 각각 비트맵, 도형 그리기를 할것이다
         btn_imgView.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(),ViewActivity.class);
                 startActivity(intent);
         }});
+
+        //제스처 트래킹 액티비티
+
+        btn_gesture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(),GestureActivity.class);
+                startActivity(intent);
+            }});
 
 
 

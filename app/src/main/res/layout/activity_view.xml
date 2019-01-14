@@ -7,23 +7,34 @@
     android:layout_height="match_parent"
     tools:context=".ViewActivity"
     >
-    <com.example.customviews.charting.PieChart
-        app:showText="true"
-        app:labelPosition="left" />
+
     <!--<com.example.sewonkim.imagecropper.FreeLineView-->
 
 
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent"-->
-
         <!--android:scaleType="fitXY"-->
+        <!---->
         <!--app:czcolor="#FF000000"-->
+        <!--app:czcolor2="#FF0000"-->
         <!--app:czbackground="#FFFFFFFF"-->
         <!--app:czstrokeWidth="5"-->
         <!--app:czantiAlias="true"-->
-    <!--&gt;-->
+    <!--/>-->
 
-    <!--</com.example.sewonkim.imagecropper.FreeLineView>-->
+
+    <com.example.sewonkim.imagecropper.SquareView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+
+        app:sqcolor="#FF0000"
+        app:sqstrokeWidth="5"
+        app:sqantiAlias="true"
+        app:sqbackground="#FFFFFFFF"
+
+        />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -3,6 +3,7 @@
     <declare-styleable name="FreeLineView">
 
         <attr name="czcolor" format="string" />
+        <attr name="czcolor2" format="string" />
         <attr name="czstrokeWidth" format="integer" />
         <attr name="czantiAlias" format="boolean" />
         <attr name="czbackground" format="string" />
